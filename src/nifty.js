@@ -106,7 +106,7 @@ class Nifty extends HTMLElement {
     if (opts.target) {
       if (opts.target === 'self') return [this];
 
-      switch (opts['root'] || this._defaultTargetRoot) {
+      switch (opts.root || this._defaultTargetRoot) {
         case 'self':
           return this.querySelectorAll(opts.target);
         case 'document':
